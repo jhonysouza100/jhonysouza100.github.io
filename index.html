@@ -2,39 +2,54 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio website</title>
-  <link rel="stylesheet" href="index-sources/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <img src="index-sources/logo.png" alt="" class="logo">
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">HIRE ME</a></li>
-      </ul>
+    <nav class="navbar">
+        <div class="max-width">
+            <!--logo-->
+            <div class="logo">
+                <img class="g2" src="./images/logo.png">
+                <a href="#">Portfo<span>lio.</span></a>
+            </div>
+            <!--menu options-->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Cantact</a></li>
+            </ul>
+            <!--menu btn-->
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
-  </header>
-  <main class="main">
-    <section class="date1">
-      <h1>I,m Jhonatan <span>Leon</span> Souza <span>Meza</span></h1>
-      <p>This is my official portfolio website to shows all<br> Details and work experience web development</p>
-      <a href="#">My CV</a>
-      <br>
-      <h2>Gracias por vistar my pagina web, por el momento estoy trabajando, en mis tiempos libres, para mejorar la
-        experiencia de usuario!!<br> Si estas ingresando a esta web atraves de un dispositivo movil, es muy probable que las cosas no se esten viendo como deberian.. tambien se esta trabajando en ello para hacer la pagina responsiva.</h2>
+
+    <!-- home section start-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Jhonatan Souza</div>
+                <div class="text-3">And I'm a <span>Software Architect</span></div>
+            </div>
+        </div>
     </section>
-    <section class="images">
-      <img src="index-sources/shape.png" class="shape">
-      <img src="index-sources/weid.png" class="weid">
-    </section>
-  </main>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum soluta ad nesciunt perspiciatis omnis, ipsam
+        aliquam, mollitia eaque, error provident accusamus! Ratione, corrupti. Similique accusantium libero
+        necessitatibus eum soluta nam.</p>
+    <script src="script.js"></script>
 </body>
 
 </html>
