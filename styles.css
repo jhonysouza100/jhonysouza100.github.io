@@ -99,6 +99,8 @@
 .menu-btn {
   color: var(--color-white);
   font-size: 23px;
+weigth: 23px;
+height: 23px;
   cursor: pointer;
   display: none;
 }
@@ -175,7 +177,7 @@
     transition: all 0.3s ease;
   }
 
-  .navbar .menu.active {
+  .navbar .menu:active {
     left: 0;
   }
 
@@ -187,7 +189,6 @@
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
-    ;
   }
 
   .home .home-content .text-2 {
