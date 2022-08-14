@@ -96,11 +96,9 @@
 }
 
 /* menu btn styling*/
-.menu-btn {
+.menu-btn{
   color: var(--color-white);
   font-size: 23px;
-weigth: 23px;
-height: 23px;
   cursor: pointer;
   display: none;
 }
@@ -121,7 +119,6 @@ height: 23px;
 
 .home .home-content .text-1 {
   font-size: 27px;
-
 }
 
 .home .home-content .text-2 {
@@ -155,13 +152,14 @@ height: 23px;
 }
 
 @media(max-width: 947px) {
-  .menu-btn {
-    display: block;
+  .menu-btn{
+    color: var(--color-white);
     z-index: 999;
+    display: block;
   }
 
   .menu-btn i.active:before {
-    /*menu-btn set x*/
+    /*menu-btn set icon "x"*/
     content: "\f00d";
   }
 
@@ -177,11 +175,7 @@ height: 23px;
     transition: all 0.3s ease;
   }
 
-  .navbar .menu:active {
-    left: 0;
-  }
-
-  .navbar .menu li {
+   .navbar .menu li {
     display: block;
   }
 
@@ -189,6 +183,11 @@ height: 23px;
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
+  }
+
+   .navbar .menu.active{
+    /*menu is set visible on positioX -100 to 0 left*/
+    left: 0;
   }
 
   .home .home-content .text-2 {
