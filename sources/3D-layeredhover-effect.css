@@ -3,6 +3,7 @@
     padding: 150px 0;
     display: grid;
     height: 100%;
+    width: 100%;
     place-items: center;
     background: #000;
     /*border:1px solid #fff;*/
@@ -134,3 +135,21 @@
     bottom: -35px;
     opacity: 1;
   }
+
+  /* responsive media query start */
+@media(max-width: 1104px) {
+    .icons{/*contenedor*/
+
+    }
+
+    .icons a .layer span{/*borde*/
+
+    }
+  .icons a .layer span.fab{/*simbolo*/
+
+  }
+  .icons a .text{/*texto*/
+
+  }
+        
+}
