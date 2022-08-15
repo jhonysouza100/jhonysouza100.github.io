@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 :root {
   --color-red: #d11a26;
@@ -97,7 +97,7 @@
 }
 
 /* menu btn styling*/
-.menu-btn {
+.menu-btn{
   color: var(--color-white);
   font-size: 23px;
   cursor: pointer;
@@ -120,7 +120,6 @@
 
 .home .home-content .text-1 {
   font-size: 27px;
-
 }
 
 .home .home-content .text-2 {
@@ -169,13 +168,14 @@
 }
 
 @media(max-width: 947px) {
-  .menu-btn {
-    display: block;
+  .menu-btn{
+    color: var(--color-white);
     z-index: 999;
+    display: block;
   }
 
   .menu-btn i.active:before {
-    /*menu-btn set x*/
+    /*menu-btn set icon "x"*/
     content: "\f00d";
   }
 
@@ -191,11 +191,7 @@
     transition: all 0.3s ease;
   }
 
-  .navbar .menu.active {
-    left: 0;
-  }
-
-  .navbar .menu li {
+   .navbar .menu li {
     display: block;
   }
 
@@ -203,7 +199,11 @@
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
-    ;
+  }
+
+   .navbar .menu.active{
+    /*menu is set visible on positioX -100 to 0 left*/
+    left: 0;
   }
 
   .home .home-content .text-2 {
