@@ -1,4 +1,6 @@
 /* about section styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 :root {
     --color-red: #d11a26;
     --color-gray: #494844;
@@ -79,10 +81,12 @@ section {
 .about .about-content .right .text span {
     color: var(--color-red);
 }
-.about .about-content .right p{
+
+.about .about-content .right p {
     text-align: justify;
 }
-.about .about-content .right a{
+
+.about .about-content .right a {
     display: inline-block;
     background: var(--color-red);
     color: var(--color-white);
@@ -94,9 +98,29 @@ section {
     border: 2px solid var(--color-red);
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+
+.about .about-content .right a:hover {
     color: var(--color-red);
     background: none;
 }
 
 /* responsive media query start */
+@media(max-width: 1104px) {
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+}

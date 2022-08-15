@@ -155,7 +155,7 @@
 }
 
 /* responsive media query start */
-@media(max-width: 1104px){
+@media(max-width: 1300px){
   .home .max-width{
     margin-left: 0px;
   }
