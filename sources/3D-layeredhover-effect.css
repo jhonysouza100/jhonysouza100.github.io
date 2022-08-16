@@ -140,28 +140,4 @@
 .icons a:hover .text {
     bottom: -35px;
     opacity: 1;
-}
-
-/* responsive media query start */
-@media(max-width: 561px) {
-    .icons {
-        /*contenedor*/
-
-    }
-
-    .icons a .layer span {
-        /*bordes*/
-
-    }
-
-     .icons a .layer span.fab {
-        /*simbol*/
-
-    }
-
-   .icons a .text {
-        /*texto*/
-    }
-
-}
-*/
+}/*
