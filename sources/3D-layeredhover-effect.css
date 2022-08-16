@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 :root {
     --color-red: #d11a26;
     --color-gray: #494844;
@@ -146,29 +146,22 @@
 @media(max-width: 561px) {
     .icons {
         /*contenedor*/
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 30px;
+
     }
 
-    /*.icons a .layer span {
+    .icons a .layer span {
         /*bordes*/
-        width: 60px;
-        height: 60px;
-    }*/
 
-/*     .icons a .layer span.fab {
+    }
+
+     .icons a .layer span.fab {
         /*simbol*/
-        font-size: 20px;
-        line-height: 30px;
-    }*/
 
-   /* .icons a .text {
+    }
+
+   .icons a .text {
         /*texto*/
-        font-size: 20px;
-        text-align: center;
-        margin-left: -12px;
-    }*/
+    }
 
-}*/
+}
+*/
