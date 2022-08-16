@@ -105,11 +105,13 @@ section {
 }
 
 /* responsive media query start */
-@media(max-width: 561px) {
+@media(max-width: 997px) {
     .about .about-content .column {
-        width: 100%;
+        width: 50%;
     }
+}
 
+@media(max-width: 1104px){
     .about .about-content .left {
         display: flex;
         justify-content: center;
