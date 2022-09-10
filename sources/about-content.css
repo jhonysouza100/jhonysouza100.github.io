@@ -7,16 +7,12 @@
 
 }
 
-/* about section styling */
-section {
+/* all similar  content styling code  */
+section{
     padding: 100px 0;
 }
 
-.about {
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .title {
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -26,7 +22,7 @@ section {
     padding-bottom: 20px;
 }
 
-.about .title::before {
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -37,8 +33,7 @@ section {
     transform: translateX(-50%);
 }
 
-.about .title::after {
-    content: "who i am";
+section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -47,10 +42,18 @@ section {
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
-    /*background: transparent;*/
 }
 
-.about .about-content {
+/* about section styling */
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title::after {
+    content: "who i am";
+}
+
+.about .about-content, .services .serv-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,7 +107,7 @@ section {
     background: none;
 }
 
-/* responsive media query start */
+/* about responsive media query start */
 @media(max-width: 1104px) {
     .about .about-content .left img {
         height: 350px;
@@ -148,3 +151,5 @@ section {
     }
 
 }
+
+

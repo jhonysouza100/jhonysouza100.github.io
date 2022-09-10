@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --color-red: #d11a26;
+    --color-gray: #494844;
+    --color-white: #e8e8e8;
+
+}
+
+/* services section styling */
+.services{
+    background: black;
+    color: var(--color-white)
+}
+
+.services .title::before{
+    background: var(--color-white);
+}
+
+.services .title::after{
+    background: black;
+    content: "what i provide";
+}
+
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover{
+    background: var(--color-red);
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i{
+    font-size: 50px;
+    color: var(--color-red);
+}
+
+.services .serv-content .card:hover i{
+    color: var(--color-white);
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* services responsive media query start */
+@media(max-width: 947px){
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 690px){
+    .services .serv-content .card{
+        width: 100%;
+    }
+    
+}

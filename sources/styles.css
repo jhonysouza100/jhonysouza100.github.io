@@ -56,7 +56,6 @@
 
 .navbar.sticky .nav-text a:hover {
   color: var(--color-white);
-  text-shadow: 1px 1px 3px #000;
 }
 
 .navbar .nav-text a {
@@ -93,7 +92,6 @@
 
 .navbar.sticky .menu li a:hover {
   color: var(--color-white);
-  text-shadow: 1px 1px 3px #000;
 }
 
 /* menu btn styling*/
@@ -238,4 +236,5 @@
   .home .home-content .text-3 {
     font-size: 27px;
   }
+
 }
