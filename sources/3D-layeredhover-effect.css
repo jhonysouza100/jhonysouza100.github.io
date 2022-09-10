@@ -8,6 +8,7 @@
 
 /* footer section styling */
 .footer {
+    
     padding: 150px 0;
     display: grid;
     height: 100%;
@@ -18,7 +19,10 @@
 }
 
 .icons {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .icons a {
@@ -141,4 +145,20 @@
 .icons a:hover .text {
     bottom: -35px;
     opacity: 1;
+}
+
+/* social responsive media query start */
+ @media(max-width: 947px){
+    .icons{
+        width: calc(50% - 10px);
+    }
+    .icons a{
+        margin-bottom: 40px;
+    }
+    .icons a .text{
+        transition: bottom 0.3s ease, opacity 0.2s ease;
+    }
+    .icons a:hover .text {
+        bottom: -25px;
+    }
 }
