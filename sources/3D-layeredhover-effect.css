@@ -148,10 +148,11 @@
 }
 
 /* social responsive media query start */
-@media(max-width: 947px) {
+@media(max-width: 690px) {
     .icons {
-        width: calc(80% - 10px);
+        width: calc(60% - 10px);
         border: #e8e8e8 solid;
+        justify-content: center;
     }
 
     .icons a {
@@ -165,12 +166,5 @@
 
     .icons a:hover .text {
         bottom: -25px;
-    }
-}
-
-@media(max-width: 690px) {
-    .icons {
-        width: calc(50% - 10px);
-        flex-direction: row;
     }
 }
