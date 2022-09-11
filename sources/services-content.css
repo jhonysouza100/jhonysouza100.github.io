@@ -10,7 +10,8 @@
 /* services section styling */
 .services{
     background: black;
-    color: var(--color-white)
+    color: var(--color-white);
+    font-family: 'Popins', sans-serif;
 }
 
 .services .title::before{
