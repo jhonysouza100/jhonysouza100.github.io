@@ -67,15 +67,15 @@
     height: 13px;
     width: 13px;
     margin: 0 5px;
-    outline: none! important;
+    outline: none!important;
     border-radius: 50%;
-    border: 2px solid var(--color-red)! important;
+    border: 2px solid var(--color-red)!important;
+    transition: all 0.3s ease;
 }
 .owl-dot.active{
     width: 35px;
     border-radius: 14px;
 }
 .owl-dot.active, .owl-dot.active:hover{
-    
+    background: var(--color-red)!important;
 }
-/* team responsive media query start */
