@@ -14,6 +14,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -95,11 +99,35 @@
 }
 
 /* menu btn styling*/
-.menu-btn{
+.menu-btn {
   color: var(--color-white);
   font-size: 23px;
   cursor: pointer;
   display: none;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--color-red);
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: var(--color-white);
+  z-index: 999;
+  font-size: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* home section styling */
@@ -136,7 +164,8 @@
   color: var(--color-red);
   font-weight: 500;
 }
-.home .home-content a{
+
+.home .home-content a {
   display: inline-block;
   background: var(--color-red);
   color: var(--color-white);
@@ -147,26 +176,27 @@
   border: 2px solid var(--color-red);
   transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+
+.home .home-content a:hover {
   color: var(--color-red);
   background: none;
 }
 
 /* responsive media query start */
-@media(max-width: 1300px){
-  .home .max-width{
+@media(max-width: 1300px) {
+  .home .max-width {
     margin-left: 0px;
   }
 }
 
-@media(max-width: 991px){
+@media(max-width: 991px) {
   .max-width {
     padding: 0 50px;
   }
 }
 
 @media(max-width: 947px) {
-  .menu-btn{
+  .menu-btn {
     color: var(--color-white);
     z-index: 999;
     display: block;
@@ -189,7 +219,7 @@
     transition: all 0.3s ease;
   }
 
-   .navbar .menu li {
+  .navbar .menu li {
     display: block;
   }
 
@@ -199,7 +229,7 @@
     font-size: 25px;
   }
 
-   .navbar .menu.active{
+  .navbar .menu.active {
     /*menu is set visible on positioX -100 to 0 left*/
     left: 0;
   }
@@ -215,9 +245,10 @@
 }
 
 @media(max-width: 690px) {
-  .max-width{
+  .max-width {
     padding: 0 23px;
   }
+
   .home .home-content .text-2 {
     font-size: 60px;
 
@@ -227,6 +258,7 @@
     font-size: 32px;
   }
 }
+
 @media(max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;

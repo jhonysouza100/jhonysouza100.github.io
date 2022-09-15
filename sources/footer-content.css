@@ -9,7 +9,7 @@
 
 /* footer section styling */
 .footer {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,6 +18,7 @@
     overflow: hidden;
     background: #111;
 }
+
 footer .title {
     position: relative;
     text-align: center;
@@ -50,47 +51,56 @@ footer .title::after {
     background: #fff;
     transform: translateX(-50%);
 }
-.footer .title::before{
+
+.footer .title::before {
     background: var(--color-white);
 }
-.footer .title::after{
+
+.footer .title::after {
     background: #111;
     content: "Follow me";
 }
-.footer .copiright{
+
+.footer .copiright {
     font-family: 'Poppins', sans-serif;
-    width:100%;
-    padding: 50px 0 5px 0;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: center;
     color: var(--color-white);
 }
-.footer .copiright span{
+
+.footer .copiright span {
     font-size: 14px;
 }
-.footer .copiright span a{
+
+.footer .copiright span a {
     color: var(--color-red);
     text-decoration: none;
 }
-.footer .copiright span a:hover{
+
+.footer .copiright span a:hover {
     text-decoration: underline;
 }
 
 /* footer responsive media query start */
-@media(max-width: 544px){
-    .footer .copiright span{
+@media(max-width: 544px) {
+    .footer .copiright span {
         font-size: 13px;
     }
 }
-@media(max-width: 439px){
-    .footer .copiright span{
+
+@media(max-width: 439px) {
+    .footer .copiright span {
         font-size: 12px;
     }
 }
-@media(max-width: 352px){
-    .footer .copiright span{
+
+@media(max-width: 352px) {
+    .footer .copiright span {
         font-size: 11px;
     }
 }
