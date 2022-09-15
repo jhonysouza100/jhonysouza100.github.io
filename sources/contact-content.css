@@ -109,16 +109,20 @@
     color: var(--color-red);
     background: none;
 }
-@media(max-width: 640px){
+@media(max-width: 790px){
     .contact .contact-content .column{
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
+    }
+    .contact .contact-content .row i{
+        font-size: 23px;
+    }
+    .contact .contact-content .row .info{
+        margin-left: 12px;
     }
     .contact .contact-content .info .head,
     .contact .contact-content .info .sub-title{
         font-size: 15px;
     }
-    .contact .contact-content .row .info{
-        margin-left: 20px;
-    }
+    
 }
