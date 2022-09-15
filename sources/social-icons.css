@@ -7,10 +7,10 @@
 
 }
 
-/* footer section styling */
+/* social section styling */
 .icons {
     width:100%;
-    padding: 50px 250px;
+    padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -140,11 +140,12 @@
 }
 
 /* social responsive media query start */
-@media(max-width: 690px) {
+@media(max-width: 640px) {
     .icons {
         width: 100vw;
         padding: 0 50px;
         justify-content: space-evenly;
+        padding: 10px 10px;
     }
 
     .icons a {

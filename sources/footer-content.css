@@ -9,10 +9,9 @@
 
 /* footer section styling */
 .footer {
-    width: 100%;
-    height: 100%;
+    padding: 100px 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -68,6 +67,9 @@ footer .title::after {
     justify-content: center;
     color: var(--color-white);
 }
+.footer .copiright span{
+    font-size: 14px;
+}
 .footer .copiright span a{
     color: var(--color-red);
     text-decoration: none;
@@ -76,3 +78,19 @@ footer .title::after {
     text-decoration: underline;
 }
 
+/* footer responsive media query start */
+@media(max-width: 544px){
+    .footer .copiright span{
+        font-size: 13px;
+    }
+}
+@media(max-width: 439px){
+    .footer .copiright span{
+        font-size: 12px;
+    }
+}
+@media(max-width: 352px){
+    .footer .copiright span{
+        font-size: 11px;
+    }
+}
