@@ -1,5 +1,5 @@
 /* about section styling */
-.about{
+.about {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -7,13 +7,15 @@
     content: "who i am";
 }
 
-.about .about-content, .services .serv-content{
+.about .about-content,
+.services .serv-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/*
 .about .about-content .left {
     width: 45%;
 }
@@ -23,7 +25,7 @@
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
-}
+}*/
 
 .about .about-content .right {
     width: 55%;
@@ -62,14 +64,14 @@
 }
 
 /* about responsive media query start */
-@media(max-width: 1104px) {
-    .about .about-content .left img {
+/*@media(max-width: 1104px) {
+    .about .about-content .left img{
         height: 350px;
         width: 350px;
+
     }
-
 }
-
+*/
 @media(max-width: 947px) {
     .max-width {
         max-width: 800px;
@@ -105,5 +107,3 @@
     }
 
 }
-
-

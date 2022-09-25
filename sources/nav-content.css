@@ -1,158 +1,159 @@
 /* navbar styling */
 .navbar {
-    position: fixed;
-    width: 100%;
-    padding: 30px 0;
-    /*background: var(--color-blue-1);*/
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-    z-index: 999;
-  }
-  
-  .navbar.sticky {
-    /*if scrollY then add sticky class*/
-    padding: 15px 0;
-    background: linear-gradient(
-    0deg,
-    hsl(231deg 15% 17%) 0%,
-    hsl(227deg 20% 19%) 16%,
-    hsl(224deg 26% 21%) 33%,
-    hsl(221deg 31% 22%) 47%,
-    hsl(217deg 37% 24%) 59%,
-    hsl(215deg 43% 25%) 69%,
-    hsl(211deg 49% 27%) 78%,
-    hsl(208deg 54% 28%) 84%,
-    hsl(207deg 54% 28%) 89%,
-    hsl(206deg 56% 29%) 94%,
-    hsl(205deg 56% 29%) 96%,
-    hsl(204deg 57% 29%) 99%,
-    hsl(203deg 57% 29%) 100%,
-    hsl(201deg 59% 29%) 100%,
-    hsl(200deg 59% 30%) 100%
-  );
-  }
-  
-  .navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .navbar .nav-text a:hover {
-    color: var(--color-blue-1);
-    
-  }
-  
-  .navbar.sticky .nav-text a:hover {
-    color: var(--color-white);
-  }
-  
-  .navbar .nav-text a {
-    font-size: 35px;
-    font-weight: 600;
-    color: var(--color-white);
-  }
-  
-  .navbar .nav-text a span {
-    color: var(--color-blue-1);
-  }
-  
-  .navbar.sticky .nav-text a span {
-    color: var(--color-white);
-    /*transition: all 0.3s ease;*/
-  }
-  
-  .navbar .menu li {
-    list-style: none;
-    display: inline-block;
-  }
-  
-  .navbar .menu li a {
-    display: block;
-    color: var(--color-white);
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar .menu li a:hover {
-    color: var(--color-blue-1);
-  }
-  
-  .navbar.sticky .menu li a:hover {
-    color: var(--color-white);
-  }
-  
-  /* menu btn styling*/
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.navbar.sticky {
+  /*if scrollY then add sticky class*/
+  padding: 15px 0;
+  background: linear-gradient(0deg,
+      hsl(231deg 15% 17%) 0%,
+      hsl(227deg 20% 19%) 16%,
+      hsl(224deg 26% 21%) 33%,
+      hsl(221deg 31% 22%) 47%,
+      hsl(217deg 37% 24%) 59%,
+      hsl(215deg 43% 25%) 69%,
+      hsl(211deg 49% 27%) 78%,
+      hsl(208deg 54% 28%) 84%,
+      hsl(207deg 54% 28%) 89%,
+      hsl(206deg 56% 29%) 94%,
+      hsl(205deg 56% 29%) 96%,
+      hsl(204deg 57% 29%) 97%,
+      hsl(203deg 57% 29%) 98%,
+      hsl(201deg 59% 29%) 99%,
+      hsl(200deg 59% 30%) 100%);
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-text a {
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.navbar .nav-text a:hover {
+  color: var(--color-blue-1);
+
+}
+
+.navbar.sticky .nav-text a:hover {
+  color: var(--color-white);
+}
+
+
+.navbar .nav-text a span {
+  color: var(--color-blue-1);
+}
+
+.navbar.sticky .nav-text a span {
+  color: var(--color-white);
+  /*transition: all 0.3s ease;*/
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: var(--color-blue-1);
+}
+
+.navbar.sticky .menu li a:hover {
+  color: var(--color-white);
+}
+
+/* menu btn styling*/
+.menu-btn {
+  color: var(--color-white);
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* scroll-up-btn styling*/
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  color: var(--color-white);
+  background: var(--color-blue-1);
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  z-index: 999;
+  font-size: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+@media(max-width: 947px) {
+
+  /* menu-btn set visible */
   .menu-btn {
     color: var(--color-white);
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-  }
-  
-  .scroll-up-btn {
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: var(--color-blue-1);
-    right: 30px;
-    bottom: 30px;
-    text-align: center;
-    line-height: 45px;
-    color: var(--color-white);
     z-index: 999;
-    font-size: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
+    display: block;
+  }
+
+  .menu-btn i.active:before {
+    /* menu-btn convert to "x" */
+    content: "\f00d";
+  }
+
+  .navbar .menu.active {
+    /* menu is set visible on positioX -100 to 0 left */
+    left: 0;
+  }
+
+  .navbar .menu {
+    position: fixed;
+    background: var(--color-gray);
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    text-align: center;
+    padding-top: 80px;
     transition: all 0.3s ease;
   }
-  
-  .scroll-up-btn.show{
-    opacity: 1;
-    pointer-events: auto;
+
+  .navbar .menu li {
+    display: block;
   }
 
-
-  @media(max-width: 947px) {
-    .menu-btn {
-      color: var(--color-white);
-      z-index: 999;
-      display: block;
-    }
-  
-    .menu-btn i.active:before {
-      /*menu-btn set icon "x"*/
-      content: "\f00d";
-    }
-  
-    .navbar .menu {
-      position: fixed;
-      background: var(--color-gray);
-      height: 100vh;
-      width: 100%;
-      left: -100%;
-      top: 0;
-      text-align: center;
-      padding-top: 80px;
-      transition: all 0.3s ease;
-    }
-  
-    .navbar .menu li {
-      display: block;
-    }
-  
-    .navbar .menu li a {
-      display: inline-block;
-      margin: 20px 0;
-      font-size: 25px;
-    }
-  
-    .navbar .menu.active {
-      /*menu is set visible on positioX -100 to 0 left*/
-      left: 0;
-    }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
 }

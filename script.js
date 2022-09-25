@@ -19,7 +19,7 @@ $(document).ready(function () {
         $('html').animate({ scrollTop: 0 });
     });
 
-    // toggle menu/navbar script
+    // toggle menu-btn script
     $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");

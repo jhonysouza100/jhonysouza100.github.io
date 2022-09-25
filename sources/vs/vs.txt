@@ -1,0 +1,227 @@
+.colr{
+    --color-red: #d11a26;
+    --color-gray: #494844;
+    --color-white: #e8e8e8;
+
+    --color-blue-1: #1F5A78;
+    --color-blue-2: #214B6F;
+    --color-blue-3: #262833;
+  
+    --color-orange-2: #f3a743;
+    --color-orange-1: #cd8741;
+    --color-orange-3: #fcd695;
+  
+    --color-black-1: #262833;
+    --color-black-2: #353648;
+    --color-black-3: #74737d;
+  
+    --color-red-1: #ea8255;
+    --color-red-2: #de5e70;
+    --color-red-3: #aa3a82;
+}
+
+<!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex est esse nisi magnam eum fugit
+                            quam ratione? Doloremque explicabo autem, cum illum dolores fugiat maiores omnis excepturi
+                            natus exercitationem consequatur?</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Advertising</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex est esse nisi magnam eum fugit
+                            quam ratione? Doloremque explicabo autem, cum illum dolores fugiat maiores omnis excepturi
+                            natus exercitationem consequatur?</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex est esse nisi magnam eum fugit
+                            quam ratione? Doloremque explicabo autem, cum illum dolores fugiat maiores omnis excepturi
+                            natus exercitationem consequatur?</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills y experiences.</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In magni totam eveniet quo nulla vero
+                        laborum deserunt repudiandae quos aliquid, esse debitis consectetur nihil, et incidunt commodi
+                        eos neque quam?</p>
+                    <a href="https://github.com/WarDog1000" target="_blank">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>36.2%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>61.7%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>2.1%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line java"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="team" id="team">
+        <div class="max-width">
+            <h2 class="title">My team</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-1.jpg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum consequatur
+                            eveniet cupiditate! Voluptatem deleniti ullam, non natus quasi sed, iure amet eos nostrum
+                            vitae ab magni atque facere. Delectus!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-2.jpg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum consequatur
+                            eveniet cupiditate! Voluptatem deleniti ullam, non natus quasi sed, iure amet eos nostrum
+                            vitae ab magni atque facere. Delectus!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-3.jpg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum consequatur
+                            eveniet cupiditate! Voluptatem deleniti ullam, non natus quasi sed, iure amet eos nostrum
+                            vitae ab magni atque facere. Delectus!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-4.jpg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum consequatur
+                            eveniet cupiditate! Voluptatem deleniti ullam, non natus quasi sed, iure amet eos nostrum
+                            vitae ab magni atque facere. Delectus!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/profile-5.jpeg" alt="">
+                        <div class="text">Someone name</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum consequatur
+                            eveniet cupiditate! Voluptatem deleniti ullam, non natus quasi sed, iure amet eos nostrum
+                            vitae ab magni atque facere. Delectus!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad ipsum quae exercitationem ipsa?
+                        Suscipit sapiente id, cupiditate deleniti nostrum saepe voluptates maxime, fuga vel neque sit
+                        quasi et nam exercitationem!</p>
+                    <div class="fav-icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Jhony Souza</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Foz do Iguazu</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">jhonatansouzameza100@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
