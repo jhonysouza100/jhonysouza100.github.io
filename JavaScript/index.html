@@ -1,24 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Hola JavaScript</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Hola Mundo</h1> 
+
     <script>
-        function funcion(){
+        function funcion() {
             console.log("uno");
-            return 19;
+            return 19;//termina la funcion
             console.log("dos");
             console.log("tres");
             return "La funcion ah retornado una cadena de texto";
         }
         let varFuncion = funcion();
         console.log(varFuncion);
+        function saludar(nombre = "desconocido", edad = 0){
+            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+        }
+        saludar("Gil", 7);
+
+        // funciones declaradas vs funciones expresadas
+        declarada();
+        function declarada() {
+            console.log("esta es una funcion declarada, puede invocarse en cualquier parte de nuestro modulo, incluso antes que la funcion sea declarada.");
+        }
+        declarada();
+
+        // funcion anonima
+        //expresada();
+        const expresada = function () {
+            console.log("esta es una funcion expresada, una funcion que se le ah asignado como valor a una variable, si invocamos esta funcion antes de su definicion js nos dira... Cannot access 'expresada' before initialization");
+        }
+        expresada();
+
+        //arreglos
+        const a = [];
+        const b = [1, true, "hola", ["a", "b", "c"]];
+        console.log(a);
+        console.log(b);
+        console.log(b.length);// .length es una propiedad de los arreglos
+        console.log(b[3]);
+        console.log(b[3][2]);
+
+        // constructores de arreglos ESC6
+        const c = Array.of("x","y","z");
+        console.log(c);
+
+        const d = Array(10).fill(false);// crea 10 posiciones con el valor de false
+        console.log(d);
+
+        const e = new Array();// manera antigua de declarar un arreglo desde su constructor
+        const f = new Array(true, false, 3);
+
+        // metodos de Arrays
+        const colores = ["rojo","verde","zul"];
+        colores.push("negro");// añade un alemento al final de la fila
+        console.log(colores);
+        colores.pop()// corta un elemento al final de la fila
+        console.log(colores);
+        colores.unshift("magenta");// coloca un elemento al inicio de la fila
+        console.log(colores);
+        colores.shift();// corta un elemento al principio de la fila
+        console.log(colores);
+        
+        colores.forEach(function(element, index){// recorre el .length de la fila recuperando cada elemento y su index
+            console.log(`<li id="${index}">${element}</li>`);
+        });
+
+        // objetos
+         let string = new String("");
+
+         const objetoA = {};
+         console.log(objetoA);
+
+         const joni = {// atributos de un objeto
+            /*dentro de un objeto:
+            -las variables se llaman atributos
+            -las funciones se llaman metodos
+            */
+            
+            edad: 27,
+            apellido: "saludame",
+            nombre: "esta",
+            pasatiempos: ["estudios", "videojuegos","tarining"],
+            carrera:{
+                titulo: "frontend",
+                empleado: false,
+                rama: 2
+            },
+            saludar: function (){
+                console.log(`Mi nombre es ${this.apellido} ${this.nombre}`);
+            }
+         };
+         console.log(joni);
+         console.log(joni["nombre"]);
+         console.log(joni.nombre);
+         
+         console.log(joni.pasatiempos[1]);// llamar arreglo del obj
+         console.log(joni.carrera.titulo);//llamar obj del obj
+         joni.saludar();// llamar metodo del obj
+
+         console.log(Object.keys(joni));
+         console.log(Object.values(joni));
+         console.log(joni.hasOwnProperty("nombre"));// evalua si se encuentra la propriedad
+
+
     </script>
 </body>
+
 </html>
