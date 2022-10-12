@@ -11,107 +11,220 @@
 
 <body>
 
-    <script>
-        function funcion() {
-            console.log("uno");
-            return 19;//termina la funcion
-            console.log("dos");
-            console.log("tres");
-            return "La funcion ah retornado una cadena de texto";
-        }
-        let varFuncion = funcion();
-        console.log(varFuncion);
-        function saludar(nombre = "desconocido", edad = 0){
-            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
-        }
-        saludar("Gil", 7);
+    <script src="script.js">
+        // function funcion() {
+        //     console.log("uno");
+        //     return 19;//termina la funcion
+        //     console.log("dos");
+        //     console.log("tres");
+        //     return "La funcion ah retornado una cadena de texto";
+        // }
+        // let varFuncion = funcion();
+        // console.log(varFuncion);
+        // function saludar(nombre = "desconocido", edad = 0){
+        //     console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+        // }
+        // saludar("Gil", 7);
 
-        // funciones declaradas vs funciones expresadas
-        declarada();
-        function declarada() {
-            console.log("esta es una funcion declarada, puede invocarse en cualquier parte de nuestro modulo, incluso antes que la funcion sea declarada.");
-        }
-        declarada();
+        // // funciones declaradas vs funciones expresadas
+        // declarada();
+        // function declarada() {
+        //     console.log("esta es una funcion declarada, puede invocarse en cualquier parte de nuestro modulo, incluso antes que la funcion sea declarada.");
+        // }
+        // declarada();
 
-        // funcion anonima
-        //expresada();
-        const expresada = function () {
-            console.log("esta es una funcion expresada, una funcion que se le ah asignado como valor a una variable, si invocamos esta funcion antes de su definicion js nos dira... Cannot access 'expresada' before initialization");
-        }
-        expresada();
+        // // funcion anonima
+        // //expresada();
+        // const expresada = function () {
+        //     console.log("esta es una funcion expresada, una funcion que se le ah asignado como valor a una variable, si invocamos esta funcion antes de su definicion js nos dira... Cannot access 'expresada' before initialization");
+        // }
+        // expresada();
 
-        //arreglos
-        const a = [];
-        const b = [1, true, "hola", ["a", "b", "c"]];
-        console.log(a);
-        console.log(b);
-        console.log(b.length);// .length es una propiedad de los arreglos
-        console.log(b[3]);
-        console.log(b[3][2]);
+        // //arreglos
+        // const a = [];
+        // const b = [1, true, "hola", ["a", "b", "c"]];
+        // console.log(a);
+        // console.log(b);
+        // console.log(b.length);// .length es una propiedad de los arreglos
+        // console.log(b[3]);
+        // console.log(b[3][2]);
 
-        // constructores de arreglos ESC6
-        const c = Array.of("x","y","z");
-        console.log(c);
+        // // constructores de arreglos ESC6
+        // const c = Array.of("x","y","z");
+        // console.log(c);
 
-        const d = Array(10).fill(false);// crea 10 posiciones con el valor de false
-        console.log(d);
+        // const d = Array(10).fill(false);// crea 10 posiciones con el valor de false
+        // console.log(d);
 
-        const e = new Array();// manera antigua de declarar un arreglo desde su constructor
-        const f = new Array(true, false, 3);
+        // const e = new Array();// manera antigua de declarar un arreglo desde su constructor
+        // const f = new Array(true, false, 3);
 
-        // metodos de Arrays
-        const colores = ["rojo","verde","zul"];
-        colores.push("negro");// añade un alemento al final de la fila
-        console.log(colores);
-        colores.pop()// corta un elemento al final de la fila
-        console.log(colores);
-        colores.unshift("magenta");// coloca un elemento al inicio de la fila
-        console.log(colores);
-        colores.shift();// corta un elemento al principio de la fila
-        console.log(colores);
-        
-        colores.forEach(function(element, index){// recorre el .length de la fila recuperando cada elemento y su index
-            console.log(`<li id="${index}">${element}</li>`);
-        });
+        // // metodos de Arrays
+        // const colores = ["rojo","verde","zul"];
+        // colores.push("negro");// añade un alemento al final de la fila
+        // console.log(colores);
+        // colores.pop()// corta un elemento al final de la fila
+        // console.log(colores);
+        // colores.unshift("magenta");// coloca un elemento al inicio de la fila
+        // console.log(colores);
+        // colores.shift();// corta un elemento al principio de la fila
+        // console.log(colores);
 
-        // objetos
-         let string = new String("");
+        // colores.forEach(function(element, index){// recorre el .length de la fila recuperando cada elemento y su index
+        //     console.log(`<li id="${index}">${element}</li>`);
+        // });
 
-         const objetoA = {};
-         console.log(objetoA);
+        // // objetos
+        //  let string = new String("");
 
-         const joni = {// atributos de un objeto
-            /*dentro de un objeto:
-            -las variables se llaman atributos
-            -las funciones se llaman metodos
-            */
+        //  const objetoA = {};
+        //  console.log(objetoA);
+
+        //  const joni = {// atributos de un objeto
+        //     /*dentro de un objeto:
+        //     -las variables se llaman atributos
+        //     -las funciones se llaman metodos
+        //     */
+
+        //     edad: 27,
+        //     apellido: "saludame",
+        //     nombre: "esta",
+        //     pasatiempos: ["estudios", "videojuegos","tarining"],
+        //     carrera:{
+        //         titulo: "frontend",
+        //         empleado: false,
+        //         rama: 2
+        //     },
+        //     saludar: function (){
+        //         console.log(`Mi nombre es ${this.apellido} ${this.nombre}`);
+        //     }
+        //  };
+        //  console.log(joni);
+        //  console.log(joni["nombre"]);
+        //  console.log(joni.nombre);
+
+        //  console.log(joni.pasatiempos[1]);// llamar arreglo del obj
+        //  console.log(joni.carrera.titulo);//llamar obj del obj
+        //  joni.saludar();// llamar metodo del obj
+
+        //  console.log(Object.keys(joni));
+        //  console.log(Object.values(joni));
+        //  console.log(joni.hasOwnProperty("nombre"));// evalua si se encuentra la propriedad
+
+        // //  operadores
+        // // aritmeticos + - * / %
+        // let arit = 5 + (5-10)*3;
+        // let modulo = 5 % 2; 
+        // console.log(modulo);
+
+        // // relacionales < > <= >= == === != !==
+        // console.log(8>9);// condicion
+        // console.log(9>8);
+        // console.log(8>=9);
+        // console.log(9>=8);
+        // console.log(7<7);
+        // console.log(7<=7);
+
+        // // asignacion = == ===
+        // console.log(7==7);
+        // console.log(7=="7");
+        // console.log(7==="7");
+        // console.log(0==false);
+        // console.log(0===false);
+
+        // // incremento y decremento ++ --
+        // let i = 0;
+        // i = i + 1;
+        // console.log(i);
+        // i+=i;
+        // console.log(i);
+        // i++; // auto incremento
+        // console.log(i);
+        // i--; // auto decremento
+        // console.log(i);
+
+        // // logicos !not ||or &and
+        // console.log(1 === 2 || 1 < 2); // || mientras una condicion, se cumpla se valida verdadero
+        // console.log(1 === 2 && 1 < 2); // || mientras se cumplan todas la condiciones, se valida verdadero
+
+        // // condicionales if else
+        // let edad = 17;
+        // if (edad >= 17) {
+        //     console.log("eres mayor");
+        // } else {
+        //     console.log("eres menor");
+        // }
+
+        // let hora = 16;
+        // if (hora >= 0 && hora <= 5) {
+        //     console.log("desaje dormir");
+        // } else if (hora >= 6 && hora <= 11) {
+        //     console.log("buenos dias");
+        // } else if (hora >= 12 || hora <= 18) {
+        //     console.log("buenas tardes");
+        // } else if (hora >= 19 && hora <= 23) {
+        //     console.log("buenas noches");
+        // }
+
+        // // operador ternario (condicion)? verdadero : falso;
+        // let esMayor = (edad >= 17) ? "ERES MAYOR" : "ERES MENOR";
+        // console.log(esMayor);
+
+        // // swich case 
+        // let dia = 2;
+        // switch (key) {
+        //     case 0:
+        //         console.log("lunes");
+        //         break;
+        //     case 1:
+        //         console.log("miercoles");
+        //         break;
+        //     case 2:
+        //         console.log("viernes");
+        //         break;
+        //     default:
+        //         break;
+        // }
+
+        // // ciclos loops
+        // // while()
+        // let contador = 0;
+        // while(contador <  10){
+        //     console.log("while = "+contador);
+        //     contador++;
+        // }
+        // // do{} while()
+        // let i = 1;
+        // do{
             
-            edad: 27,
-            apellido: "saludame",
-            nombre: "esta",
-            pasatiempos: ["estudios", "videojuegos","tarining"],
-            carrera:{
-                titulo: "frontend",
-                empleado: false,
-                rama: 2
-            },
-            saludar: function (){
-                console.log(`Mi nombre es ${this.apellido} ${this.nombre}`);
-            }
-         };
-         console.log(joni);
-         console.log(joni["nombre"]);
-         console.log(joni.nombre);
-         
-         console.log(joni.pasatiempos[1]);// llamar arreglo del obj
-         console.log(joni.carrera.titulo);//llamar obj del obj
-         joni.saludar();// llamar metodo del obj
+        //     console.log(i+"° "+"do while = "+contador);
+        //     contador++;
+        //     i++;
+        // }while(contador < 10);
+        // // for()
+        // for(let i=0;i<10;i++){
+        //     console.log("for = "+i);
+        // }
 
-         console.log(Object.keys(joni));
-         console.log(Object.values(joni));
-         console.log(joni.hasOwnProperty("nombre"));// evalua si se encuentra la propriedad
+        // //for in // ESC6 
+        // const obj = {tipo: "fuego", nombre: "charmander", rol: "daño"};
+        // for(const atributo in obj){ //me permite recorrer las propiedades de un objeto
+        //     console.log(atributo);
+        // }
 
-
+        // for(const atr in obj){
+        //     console.log(`Key:${atr}, Values:${obj[atr]}`);
+        // }
+        // // for of
+        // const array = [10,20,30];
+        // for(const i of array){// me permite recorrer todos los elemetos de un array u objeto iterable
+        //     console.log(i);
+        // }
+        
+        // const cadena = "Hola for of";
+        // for(const i of cadena){
+        //     console.log(i);
+        // }
     </script>
 </body>
 
