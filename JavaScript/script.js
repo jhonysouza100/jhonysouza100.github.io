@@ -136,3 +136,27 @@
 // };
 // perro.ladrar();
 // perro.ladrar2();
+
+// POO 
+// clases - modelo a seguir
+// objeto - es una instancioa de una clase
+// atributos - caracteristicas de un objeto
+// metodos - son las acciones que un objeto puede realiazar (funciones)
+// herencia - los hijos heredan las caracteristicas del padre
+const animal = {
+  nombre: "snoopy",
+  sonar(){
+      console.log("hoago sonidos porque estoy vivo");
+  }
+}
+console.log(animal);
+
+// funcion constructora
+function Animal(nombre, genero){
+  this.nombre = nombre;
+  this.genero = genero;
+
+  this.sonar = function(){
+
+  }
+}
