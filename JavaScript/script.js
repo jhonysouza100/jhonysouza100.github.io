@@ -143,20 +143,149 @@
 // atributos - caracteristicas de un objeto
 // metodos - son las acciones que un objeto puede realiazar (funciones)
 // herencia - los hijos heredan las caracteristicas del padre
-const animal = {
-  nombre: "snoopy",
-  sonar(){
-      console.log("hoago sonidos porque estoy vivo");
-  }
-}
-console.log(animal);
+// const animal = {
+//   nombre: "snoopy",
+//   sonar(){
+//       console.log("hoago sonidos porque estoy vivo");
+//   }
+// }
+// console.log(animal);
 
-// funcion constructora
-function Animal(nombre, genero){
-  this.nombre = nombre;
-  this.genero = genero;
+// const animal2 = {
+//   nombre: "Lola Bunny",
+//   sonar(){
+//       console.log("hogo sonidos porque estoy vivo");
+//   }
+// }
 
-  this.sonar = function(){
+// console.log(animal2);
 
-  }
-}
+// // funcion constructora v1
+// // function Animal(nombre, genero){
+// //   this.nombre = nombre;
+// //   this.genero = genero;
+
+// //   this.sonar = function(){
+// //     console.log("Hagho sonidos porque estoy vivo");
+// //   }
+// //   this.saludar = function(){
+// //     console.log(`Hola me llamo ${this.nombre}`);
+// //   }
+// // }
+// //funcion constructora v2 / donde asignamos los metodos al prototypo
+// function Animal(nombre, genero){
+//   this.nombre = nombre;
+//   this.genero = genero;
+
+//   Animal.prototype.sonar = function(){//metodos agregado alprototypo de la funcio constructora
+//     console.log("Hago sonidos porque estoy vivo");
+//   }
+//   this.saludar = function(){
+//     console.log(`Hola me llamo ${nombre}`);
+//   }
+// }
+
+// //herencia prototipica
+// function Perro(nombre,genero,size){// cada nueva instancia de Perro clonaria cada funcion super
+//   this.super = Animal;
+//   this.super(nombre,genero);
+//   this.size = size;
+// }
+
+// //Perro esta heredando de animal
+// Perro.protoype= new Animal();//linea que hace la herencia
+// Perro.prototype.constructor = Perro;
+
+// //sobreescritura del metoto del prototypo padre en el hijo
+// Perro.prototype.sonar = function(){
+//   console.log("Soy un perro y mi sonido es un ladrido");
+// }
+
+// Perro.prototype.ladrar = function(){
+//   console.log("Guaw guaw");
+// }
+
+
+// const // v2 / ahora evitamos que las instancias de Animal tengan la funcion sonar duplicada
+//   lola = new Animal("Lola Bunny", "hembra"),
+//   snoopy =new Perro("Snoopy","macho", "mediano");
+
+// console.log(lola);
+// lola.saludar();
+// lola.sonar();
+
+// console.log(snoopy);
+// snoopy.saludar();
+// snoopy.sonar();
+// snoopy.ladrar();
+
+// // funcion constructora // v3 no hace falta asignar los metodos al prototype
+// class Animal {// las clases no resibe parametros
+//   // el metodo constructor es un metodo especial que se ejecuta en el momento de crar un objeto class
+//   constructor(nombre, genero) {
+//     //atributos
+//     this.nombre = nombre;
+//     this.genero = genero;
+//   }
+//   //metodos
+//   sonar() {//metodos agregado alprototypo de la funcio constructora
+//     console.log("Hago sonidos porque estoy vivo");
+//   }
+//   saludar() {
+//     console.log(`Hola me llamo ${this.nombre}`);
+//   }
+// }
+
+// //herencia de class
+// class Perro extends Animal {
+//   constructor(nombre, genero, size) {
+//     //super es un metodo que manda a llamar el constructor de la clase padre
+//     super(nombre, genero);
+//     this.size = size;
+
+//     this.raza = null;
+//   }
+//   //sobreescritura
+//   sonar() {
+//     console.log("Soy un perro y mi sonido es un ladrido");
+//   }
+//   //nuevo metodo proprio de la clase perro
+//   ladrar() {
+//     console.log("Guaw guaw");
+//   }
+
+//   //metodos estaticos: se puede ejecutar sin instanciar la clase
+//   static describe() {
+//     console.log("Este es un metodo estatico, se puede ejecutar sin la nesesidad de instanciar la clase")
+//   }
+
+//   //los setter y getter son metodos especiale que nos van a permitir establecer y obtener los valores de atributos de nuestra clase
+//   // aunque son metodos, se ejecutan como atributos
+//   get getRaza(){// metodod que solo devuelve
+//     return this.raza;
+//   }
+//   set setRaza(raza){// recibe un valor
+//     this.raza=raza;
+//   }
+// }
+
+// // nota: las clases siguen siendo prototypes...
+// const
+//   mimi = new Animal("Mimi", "hembra"),
+//   scooby = new Perro("Scooby", "macho", "gigante");
+
+// console.log(mimi);
+// mimi.saludar();
+// mimi.sonar();
+
+// console.log(scooby);
+// scooby.saludar();
+// scooby.sonar();
+
+// //metodo estatico
+// Perro.describe();
+
+// //getter y setter 
+// scooby.setRaza = "Gran Danés";
+// scooby.getRaza;
+// console.log(scooby.getRaza);
