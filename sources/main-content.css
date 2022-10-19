@@ -38,19 +38,6 @@ html {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-
-}
-
-@media(max-width: 991px) {
-    .max-width {
-        padding: 0 50px;
-    }
-}
-
-@media(max-width: 690px) {
-    .max-width {
-        padding: 0 23px;
-    }
 }
 
 /* all similar  content styling code  */
@@ -88,4 +75,19 @@ section .title::after {
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
+}
+
+@media(max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+    section {
+        padding: 30px 0;
+    }
+}
+
+@media(max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
 }

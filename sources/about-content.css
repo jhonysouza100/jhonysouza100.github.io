@@ -1,34 +1,40 @@
 /* about section styling */
 .about {
     font-family: 'Poppins', sans-serif;
+    background: #ccc;
 }
 
 .about .title::after {
-    content: "who i am";
+    content: "Who i am";
+    background: #ccc;
 }
 
-.about .about-content,
-.services .serv-content {
+.about .about-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/*
+
 .about .about-content .left {
-    width: 45%;
+    width: 50%;
 }
 
-.about .about-content .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}*/
+.about .about-content .left .d2 {
+    font-size: 23px;
+    margin: 23px 0;/* text-space */
+    width: 100%;
+    font-weight: 800;
+}
+
+.about .about-content .left .d2 span {
+    color: var(--color-blue-1);
+    font-weight: 500;
+  }
 
 .about .about-content .right {
-    width: 55%;
+    width: 45%;
 }
 
 .about .about-content .right .text {
@@ -56,6 +62,9 @@
     border-radius: 6px;
     border: 2px solid var(--color-blue-2);
     transition: all 0.3s ease;
+    position: absolute;
+    top: 1225px;
+    right: 85px;
 }
 
 .about .about-content .right a:hover {
@@ -77,14 +86,19 @@
         max-width: 800px;
     }
 
+    .about .about-content{
+        flex-wrap: wrap-reverse;
+    }
+
     .about .about-content .column {
         width: 100%;
     }
 
     .about .about-content .left {
+        flex: 100%;
         display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .about .about-content .right {
@@ -95,7 +109,7 @@
     }
 
     .about .about-content .right .text {
-        text-align: start;
+        text-align: center;
     }
 
     .about .about-content .right p {
@@ -103,6 +117,7 @@
     }
 
     .about .about-content .right a {
+        position: static;
         align-self: center;
     }
 

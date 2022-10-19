@@ -1,6 +1,6 @@
 /* footer section styling */
 .footer {
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,6 +50,45 @@ footer .title::after {
 .footer .title::after {
     background: #111;
     content: "Follow me";
+}
+
+.footer .icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 23px;
+}
+
+.footer .icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .icons a:nth-child(1):hover {
+    color: #00f;
+    text-decoration: none;
+}
+
+.footer .icons a:nth-child(2):hover {
+    color: #0ff;
+    text-decoration: none;
+}
+
+.footer .icons a:nth-child(3):hover {
+    color: #f0a;
+    text-decoration: none;
+}
+
+.footer .icons a:nth-child(4):hover {
+    color: #00f;
+    text-decoration: none;
+}
+
+.footer .icons a:nth-child(5):hover {
+    color: #0f0;
+    text-decoration: none;
 }
 
 .footer .copiright {

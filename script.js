@@ -1,3 +1,17 @@
+// loading screen animation
+const loader = document.querySelector(".loader");
+window.onload = ()=> {
+    setTimeout(function(){
+        loader.style.opacity = "0";
+        // loader.style.background = "red";
+        setTimeout(function(){
+            loader.style.display = "none";// desaparece el loader completamente
+            
+        }, 300);
+    }, 1000);
+}
+
+// JQuery section start
 $(document).ready(function () {
 
     // sticky navbar script
@@ -27,38 +41,9 @@ $(document).ready(function () {
 
     // typing animation script
     var typed = new Typed(".typing", {
-        strings: ["Frontend", "Web Developer", "Freelance"],
+        strings: ["Frontend", "Web Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["Frontend", "Web Developer", "Freelance"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplayTimeOut: 2000,
-        autoplayPause: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: false
-            }
-        }
     });
 });

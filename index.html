@@ -5,28 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Webpage</title>
+    <title>Curriculum Web</title>
 
     <!-- web poge icon -->
     <link rel="icon" href="./images/logo.png">
 
-    <!-- normalize-->
-    <link rel="stylesheet" href="./sources/normalize.css">
+    <!-- loading screen -->
+    <link rel="stylesheet" href="./sources/loading-screen.css">
 
     <!-- sources .css start-->
     <link rel="stylesheet" href="./sources/main-content.css">
     <link rel="stylesheet" href="./sources/nav-content.css">
     <link rel="stylesheet" href="./sources/home-content.css">
     <link rel="stylesheet" href="./sources/about-content.css">
-    <link rel="stylesheet" href="./sources/services-content.css">
-    <link rel="stylesheet" href="./sources/skills-content.css">
-    <link rel="stylesheet" href="./sources/team-content.css">
-    <link rel="stylesheet" href="./sources/contact-content.css">
     <link rel="stylesheet" href="./sources/footer-content.css">
-
-    <!-- extra sources .css -->
-    <link rel="stylesheet" href="./sources/animated-card.css">
-    <link rel="stylesheet" href="./sources/social-icons.css">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/56a08b0fa1.js" crossorigin="anonymous"></script>
@@ -36,32 +28,33 @@
 
     <!-- typed funtion start -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-
-    <!-- team carousel funtion start -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 <body>
+    <!-- loader animation section start -->
+    <div class="loader">
+        <div class="center">
+            <div class="ring"></div>
+            <span>Loading...</span>
+        </div>
+    </div>
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
+
+    <!-- navbar section start -->
     <nav class="navbar">
         <div class="max-width">
             <!-- nav text -->
             <div class="nav-text">
                 <!--<img class="logo" src="./images/logo.png">-->
-                <a href="#">Portfo<span>lio.</span></a>
+                <a href="#">Curriculum<span>.web</span></a>
             </div>
             <!-- menu options -->
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                <!--<li><a href="#services" class="menu-btn">Services</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#team" class="menu-btn">Team</a></li>-->
                 <li><a href="#footer" class="menu-btn">Cantact</a></li>
             </ul>
             <!-- menu btn -->
@@ -76,7 +69,7 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
+                <div class="text-1">Hello my name is</div>
                 <div class="text-2">Jhony Souza</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
             </div>
@@ -91,43 +84,29 @@
 
             <div class="about-content">
                 <div class="column left">
-                    <div class="container">
-                        <div class="image">
-                            <img
-                                src="https://frases.top/wp-content/uploads/2021/08/las-mejores-fotos-de-perfil-para-whatsapp.jpg">
-                        </div>
-
-                        <div class="content">
-                            <div class="info">
-                                <h2>Jhony Souza</h2>
-                                <span>Web Developer</span>
-                            </div>
-                        </div>
-
-                        <ul>
-                            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a href="#"><span class="fab fa-github"></span></a></li>
-                            <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
-                        </ul>
+                    <div class="d2 text-4">Lenguages: <span>Java, JavaScript , HTML5 & CSS3.</span></div>
+                    <div class="d2 text-5">Frameworks: <span>Bootstrap, JQuery, React.</span></div>
+                    <div class="d2 text-6">Skills: <span>Git y Github, NodeJs, Sass, Bash, Markdown.</span></div>
+                    <div class="d2 text-7">IDE: <span>Visual Studio Code, NetBeans, MySQL, Adobe Package.</span>
                     </div>
+                    <div class="d2 text-8">Knowledges: <span>POO, Responsive Web Design, Algoritms and Data
+                            Structure,
+                            Relational Data Bases.</span></div>
                 </div>
 
                 <div class="column right">
-                    <div class="text">I'm Jhony Souza and I'm a <span class="typing-2"></span></div>
+                    <div class="text">Hey!<span class="typing-2"></span></div>
                     <p>My name is Jonathan, I'm 27 years old, I'm a web programming student, I'm looking for my first
-                        job in IT and I want to become a full stack developer. If you can imagine it, you can program
-                        it.</p>
-                    <a href="#">Download CV</a>
+                        job in IT and I want to become a full stack developer. I am currently learning front-end
+                        development libraries. My goal is to become a complete web developer, so I can create amazing
+                        things.</p>
+                    <a href="#">coming soon...</a>
                 </div>
 
             </div>
 
         </div>
     </section>
-
-    <!-- vs code -->
 
     <!-- footer section start -->
     <footer class="footer" id="footer">
@@ -136,61 +115,18 @@
 
             <!-- 3D layered icons effect -->
             <div class="icons">
-                <a href="#">
-                    <div class="layer">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fab fa-facebook-f"></span>
-                    </div>
-                    <div class="text">Facebook</div>
-                </a>
-                <a href="#">
-                    <div class="layer">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fab fa-twitter"></span>
-                    </div>
-                    <div class="text">Twitter</div>
-                </a>
-                <a href="#">
-                    <div class="layer">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fab fa-instagram"></span>
-                    </div>
-                    <div class="text">Instagram</div>
-                </a>
-                <a href="#">
-                    <div class="layer">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fab fa-linkedin-in"></span>
-                    </div>
-                    <div class="text">Linkedin</div>
-                </a>
-                <a href="#">
-                    <div class="layer">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fab fa-youtube"></span>
-                    </div>
-                    <div class="text">YouTube</div>
-                </a>
-
+                <a href="https://www.facebook.com/jhon.souza.7547/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/JhonySouza1000" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/el.jhony.oficial/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jhonatan-leon-souza-meza/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/WarDog1000" target="_blank"><i class="fab fa-github"></i></a>
             </div>
 
             <section class="copiright">
-                <span>Created By
+                <span>Created by
                     <a href="#">JhonySouza</a> |
                     <span class="far fa-copyright"></span>
                     2022 All rights reserved.

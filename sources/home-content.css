@@ -28,7 +28,7 @@
   margin: 5px 0;
 }
 
-.home .home-content .text-3 span {
+.home .home-content span {
   color: var(--color-blue-1);
   font-weight: 500;
 }
@@ -91,7 +91,6 @@
   .home .home-content .text-3 {
     font-size: 27px;
   }
-
 }
 
 @media(max-width: 422px) {
