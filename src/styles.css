@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html { /* aqui aplique los estilos para todas las "fuentes" */
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+
+.contenedor {
+  height: 100vh;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.izquierda {
+  background: url("./img/img1.jpg") no-repeat center; /* establece una imagen como fondo */
+  background-size: cover; /* rellena en elemento con la imagen */
+  background-color: blue;
+}
+
+.derecha {
+  background-color: red;
+}
+
+.footer {
+  background-color: #00ffaa;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* dispositivos pequenhos */
+@media screen and (max-width: 320px) {
+  .contenedor {
+     
+  }
+}
+
+/* para dispositivos medianos */
+@media  screen and (min-width: 576px) {
+  .contenedor {
+    
+  }
+}
+
+/* para dispositivos grandes */
+@media screen and (min-width: 992px) {
+  .contenedor {
+      
+  }
+}
